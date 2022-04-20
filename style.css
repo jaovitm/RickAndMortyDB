@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
 }
+html{
+    --one: #E9EFC0;
+    --two: #B4E197;
+    --three: #83BD75;
+    --four: #4E944F;
+}
 body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
 }
 
 nav{
@@ -27,21 +33,29 @@ nav{
     text-align: justify;
     padding: 10px;
 }
-.info{
+#resposta{
     display: grid;
-    grid-template-columns: auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+.info{
+    width: 300px;
     padding: 30px;
     margin: 20px;
-    background-color: cornsilk;
-    border: 3px solid black;
-    border-radius: 10px;
+    background-color: var(--one);
+    border: 6px double black;
+    border-radius: 0.5rem;
 }
 
 .card-img{ 
+    margin-bottom: 10px;
     border: 2px dashed black;
 }
-.card-title{
-    background-color: none;
+.card-title, .card-name{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .card-subtitle{
     text-align: left;
