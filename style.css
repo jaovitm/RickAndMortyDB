@@ -3,49 +3,60 @@
     padding: 0;
 }
 html{
-    --one: #E9EFC0;
-    --two: #B4E197;
-    --three: #83BD75;
-    --four: #4E944F;
+    --one: #027373;
+    --two: #038C7F;
+    --three: #ADD9D1;
+    --four: #D95252;
+    --five: #0D0D0D;
 }
 body{
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
+    background: rgba(13,13,13,1);
+    overflow-x: hidden;
 }
 
 nav{
-    background-color: #006241;
-    height: 10vh;
+    height: 25vh;
+    width: 100vw;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 20vh auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+hr{
+    margin-bottom: 5vh;
 }
 #nav-logo{
     background: none;
-    height: 10vh;
+    height: 25vh;
     padding: 0 10px 10px 10px;
 }
 #nav-name{
-    color: aliceblue;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
     background: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     letter-spacing: 3px;
-    text-align: justify;
+    text-align: center;
     padding: 10px;
 }
 #resposta{
     display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
-	padding-inline-start: 0;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .info{
     width: 300px;
     padding: 30px;
     margin: 20px;
-    background-color: var(--one);
+    background-color:rgba(2,115,115,0.35);
     border: 6px double black;
     border-radius: 0.5rem;
+}
+
+.info:hover{
+    transform: scale(1.1);
 }
 
 .card-img{ 
@@ -56,8 +67,38 @@ nav{
     display: flex;
     justify-content: center;
     align-content: center;
+    color: antiquewhite;
 }
 .card-subtitle{
     text-align: left;
     font-size: 20px;
+    color: antiquewhite;
 }
+
+#pages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#pages a button{
+    background-color: var(--three);
+    padding: 15px;
+    border-radius: 0.5rem;
+    margin: 1vw;
+    width: max-content;
+    cursor: pointer ;
+
+}
+#pages a button:hover{
+    border: 3px double black;
+    background-color: var(--two);
+}
+button:active{
+    transform: translateY(-3px);
+}
+
+
+

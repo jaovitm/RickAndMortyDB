@@ -1,11 +1,13 @@
-const ram = () =>{
-    var char = []
-    const url = id => `https://rickandmortyapi.com/api/character/${id}`
-    const div = document.getElementById("resposta")
+var char = []
+const url = id => `https://rickandmortyapi.com/api/character/${id}`
+const div = document.getElementById("resposta")
+var i;
+var f;
 
-    for(let i=1; i<=820; i++){
-        char.push(fetch(url(i)).then(response => response.json()))
-    }
+const ram = (i, f) =>{
+    for (i; i<f; i++) {
+        char.push(fetch(url(i)).then(response => response.json()));
+     }
     
     Promise.all(char)
         .then(item =>{
@@ -33,4 +35,3 @@ const ram = () =>{
     
 }
 
-ram();
