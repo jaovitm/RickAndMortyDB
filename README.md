@@ -1,3 +1,3 @@
 # RickAndMortyDB
-Um site com a descrição de todos os personagens da serie "Rick and Morty"
+A Database with all characters from "Rick and Morty"
 https://jaovitm.github.io/RickAndMortyDB/index.html
